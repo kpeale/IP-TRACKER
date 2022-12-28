@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    /* background-color: red; */
+}
+
+.ipAdress__container{
+    position: relative;
+    
+    
+}
+
+
+.ipAdress__header-img{
+    height: 30vh;
+    max-width: 100%;
+    z-index: -1;
+    position: absolute;
+}
+
+.ipAdress__headingbx,
+.ipAdress__inputbx,
+.ipAdress__arrowbx,
+.ipAdress__trackerbx,
+.ipAdress__trackerbx2,
+ .ipAdress__trackerbx---2,
+ .ipAdress__trackerbx--2
+{
+    
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     margin: 0 auto;
+     flex-wrap: wrap;
+    
+}
+
+.ipAdress__heading{
+    color: white;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+
+#ipadress{
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    color: hsl(0, 0%, 59%);
+    border: none;
+    margin-bottom: 2em;
+}
+
+.ipAdress__arrowbx{
+    position: absolute;
+    right: 6.28em;
+    top: 3.7em;
+}
+.ipAdress__arrow{
+    background-color: black;
+    width: 21px;
+    padding-top: 9px;
+    
+}
+
+.ipAdress__trackerbxx{
+    margin-top: 10em;
+    background-color: white;
+     border-radius: 10px;
+    width: 20em;
+    position: absolute;
+    z-index: 0;
+    
+}
+
+.ipAdress__trackerbx-heading{
+color: hsl(0, 0%, 59%);
+font-size: 12px;
+margin-top: 1em;
+}
+
+.ipAdress__trackerbx-para{
+    color: hsl(0, 0%, 17%);
+    font-weight: 700;
+}
+
+#map { 
+    height: 70vh; 
+    z-index: -1; 
+    margin-top: 1em;
+    /* position: absolute; */
+} 
+/* media queries for smaller screens, so I will be using max-width  */
+@media screen and (max-width: 600px) {
+    .ipAdress__arrowbx{
+        position: absolute;
+        right: 19.5%;
+        top: 48%;
+    }
+}
+
+
+/* media queries for larger screens, so I will be using min-width */
+@media screen and (min-width: 600px) {
+    .ipAdress__arrowbx{
+        position: absolute;
+        right: 20.1%;
+        top: 48%;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    
+    .ipAdress__header-img{
+        height: 50vh;
+        max-width: 100%;
+    }
+
+   
+
+    #ipadress{
+        width: 30%;
+        
+    }
+    .ipAdress__arrowbx{
+        position: absolute;
+        left: 48.5%;
+        top: 48%;
+        
+    }
+    
+    .ipAdress__trackerbxx{
+        width: 50em;
+        height: 8em;
+        display: flex;
+        flex-direction: row;
+        /* margin: 0 auto; */
+        margin-top: 8em;
+        /* justify-content: space-evenly; */
+    }
+
+    .ipAdress__trackerbx2,
+    .ipAdress__trackerbx---2
+    {
+        border-right: 2px solid hsl(0, 0%, 59%);
+        /* margin-right: 10px; */
+    }
+
+    .ipAdress__trackerbx---2{
+        padding-right: 2em;
+    }
+
+   
+    .ipAdress__trackerbx-heading{
+        margin-top: 0;
+   }
+
+   .ipAdress__trackerbx-para{
+    width: 70%;
+}
+
+#map { 
+     margin-top: 6em;
+    /* position: absolute; */
+} 
+}
+
+@media screen and (min-width: 1400px) {
+   
+
+    .ipAdress__header-img{
+        height: 60vh;
+        max-width: 100%;
+    }
+
+    .ipAdress__heading{
+        color: white;
+        margin-top: 6em;
+        margin-bottom: 1em;
+    }
+    .ipAdress__arrowbx{
+        position: absolute;
+        left: 49.3%;
+        top: 62%;
+        
+    } 
+
+    .ipAdress__trackerbx{
+         margin-top: 2em;
+        /* justify-content: space-evenly; */
+    }
+
+    #map { 
+        margin-top: 6em;
+       /* position: absolute; */
+   } 
+}

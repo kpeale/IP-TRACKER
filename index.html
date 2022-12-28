@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP ADDRESS</title>
+    <!--css sylesheet-->
+    <link rel="stylesheet" href="css/styles.css">
+
+<!--leaflet API-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
+     <!-- leaflet Javascript -->
+ <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+ integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+ crossorigin=""></script>
+
+</head>
+<body>
+<div class="ipAdress__container">
+    <div class="ipAdress__header-imgbx">
+        <img src="images/pattern-bg.png" alt="pattern" class="ipAdress__header-img">
+    </div>
+    <div class="ipAdress__headingbx">
+        <h3 class="ipAdress__heading">IP Address Tracker</h3>
+    </div>
+    <form class="ipAdress__inputbx" id="form">
+        <input type="text" id="ipadress" name="ipaddress" placeholder="Search for any IP address or domain">
+    </form>
+    <div class="ipAdress__arrowbx">
+        <img src="images/icon-arrow.svg" alt="arrow" class="ipAdress__arrow">
+    </div>
+
+    <div class="ipAdress__trackerbx">
+        
+   </div>
+</div>
+
+<div id="map"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
